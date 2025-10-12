@@ -100,5 +100,16 @@
     Email: mubarak95959@gmail.com<br>
     Subject: “PawHab – Privacy”
   </p>
+    <p style="font-size:14px; color:#555; text-align:center; margin-top:40px;">
+    Last updated: <span id="lastUpdated"></span>
+  </p>
+
+  <script>
+    // بيعرض التاريخ الحالي تلقائيًا بتنسيق واضح
+    const today = new Date();
+    const formatted = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    document.getElementById('lastUpdated').textContent = formatted;
+  </script>
+
 </body>
 </html>
